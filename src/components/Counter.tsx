@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
-import classes from './Counter.module.scss'
+import React, { useState } from 'react';
+import classes from './Counter.module.scss';
 
 function Counter() {
-  const [counter, setCounter] = useState<number>(0)
+    const [counter, setCounter] = useState<number>(0);
 
 
-  return (
-    <div>
+    return (
         <div>
-        {counter}
-        </div>
-      <button className={classes.button} onClick={()=>setCounter(counter + 1)}>
+            <div>
+                {counter}
+            </div>
+            <button className={classes.button} onClick={()=>setCounter(counter + 1)}>
             increment
-        </button>
-    </div>
-  )
+            </button>
+        </div>
+    );
 }
 
-export default Counter
+export default Counter;

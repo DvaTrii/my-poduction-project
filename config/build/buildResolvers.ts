@@ -12,6 +12,5 @@ export function buildResolvers(options: BuildOptions): webpack.ResolveOptions {
         ],
         mainFiles: ['index'],
         alias: {},
-    }
+    };
 }
-
