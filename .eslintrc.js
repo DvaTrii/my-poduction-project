@@ -1,7 +1,8 @@
 module.exports = {
     'env': {
         'browser': true,
-        'es2021': true
+        'es2021': true,
+        'jest': true
     },
     'extends': [
         'eslint:recommended',
@@ -63,7 +64,8 @@ module.exports = {
         '@typescript-eslint/semi': 'off',
         '@typescript-eslint/member-delimiter-style': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
-        '@typescript-eslint/strict-boolean-expressions': 'off'
+        '@typescript-eslint/strict-boolean-expressions': 'off',
+        'max-len': ['error', { 'code': 100, 'ignoreComments': true }]
     },
     settings: {
         react: {
